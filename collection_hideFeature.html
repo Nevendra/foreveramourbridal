@@ -139,10 +139,6 @@
 		    //font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
 		    font-size: 16px;
 		    letter-spacing: 0.8px;
-                //-webkit-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-                //-moz-box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-                //box-shadow: 2px 2px 4px rgba(0,0, 0, 0.3);
-		    //-webkit-transition: all 0.5s ease-in;
 		}
 
 		.polaroid img{
@@ -164,14 +160,27 @@
             //box-shadow: 5px 5px 10px rgba(0,0, 0, 0.4);
 		}
 
-		.overflow:hover,
+		/*.overflow:hover,
 		.overflow:focus,
 		.overflow:active {
-			/*this is a class I made for one of the polaroids which has a lot of text that goes onto the next line when bolded (on hover). But the size of the polaroid stays the same so that text gets hidden. I fix this here. I didn't do this for all of them because it makes the polaroid kinda shaky when hovered over, so I want to just apply this to that one, rather than all of them*/
+			/*this is a class I made for one of the polaroids which has a lot of text that goes onto the next line when bolded (on hover). But the size of the polaroid stays the same so that text gets hidden. I fix this here. I didn't do this for all of them because it makes the polaroid kinda shaky when hovered over, so I want to just apply this to that one, rather than all of them * /
 			overflow: hidden;
 			height: auto;
-		}
-
+		}*/
+        
+        .hideSection{
+            display: none;
+        }
+        
+        .hideButton{
+            font-weight: bold;
+            color: #1db2a3;
+            cursor: pointer;
+            display: inline-block;
+        }
+        
+        /*hideButton hover state (bottom border) is defined in jquery on the bottom of the page*/
+        
 		.bottomSection{
 			background-image: url("Images/rose_transparent.png");
 			background-repeat: no-repeat;
@@ -334,31 +343,6 @@ function googleTranslateElementInit() {
         <img src="Images/Collection_large/EddyK_4-cropped.png" alt="Eddy K">
     Eddy K
     </a>
-
-      <a class="polaroid" href="Images/Collection_large/AK160_full.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_large/AK160_full.jpg" alt="Eddy K">
-    Eddy K
-    </a>
-
-      <a class="polaroid" href="Images/Collection_large/AK181_full.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_large/AK181_full.jpg" alt="Eddy K">
-    Eddy K
-    </a>
-
-      <a class="polaroid" href="Images/Collection_large/EK1084_back2.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_large/EK1084_back2.jpg" alt="Eddy K">
-    Eddy K
-    </a>
-
-      <a class="polaroid" href="Images/Collection_large/EK1084_full-1.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_large/EK1084_full-1.jpg" alt="Eddy K">
-    Eddy K
-    </a>
-
-      <a class="polaroid" href="Images/Collection_large/EK1088_full-e1464107889952.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_large/EK1088_full-e1464107889952.jpg" alt="Eddy K">
-    Eddy K
-    </a>
     
     
     <h3>Justin Alexander</h3>
@@ -379,142 +363,107 @@ function googleTranslateElementInit() {
         <img src="Images/Collection_large/JustinAlex3.jpeg" alt="Justin Alexander">
     Justin Alexander
     </a>
-    
-    <!---<a class="polaroid" href="Images/Collection_large/JustinAlexander_2-brighter-smaller.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_large/JustinAlexander_2-brighter-smaller.jpg" alt="Justin Alexander">
-   Justin Alexander
-    </a>-->
-    
+
     <a class="polaroid" href="Images/Collection_large/JustinAlexander_3.png" rel="prettyPhoto[gallery]">
         <img src="Images/Collection_large/JustinAlexander_3.png" alt="Justin Alexander">
     Justin Alexander
     </a>
     
-    <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot14.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JustinAlexanderKnot14.jpg" alt="Justin Alexander">
-    Justin Alexander
-    </a>
+    <span class = "hideSection">
+        <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot14.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/JustinAlexanderKnot14.jpg" alt="Justin Alexander">
+        Justin Alexander
+        </a>
 
-    <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot15.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JustinAlexanderKnot15.jpg" alt="Justin Alexander">
-    Justin Alexander
-    </a>
+        <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot15.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/JustinAlexanderKnot15.jpg" alt="Justin Alexander">
+        Justin Alexander
+        </a>
 
-    <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot16.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JustinAlexanderKnot16.jpg" alt="Justin Alexander">
-    Justin Alexander
-    </a>
+        <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot16.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/JustinAlexanderKnot16.jpg" alt="Justin Alexander">
+        Justin Alexander
+        </a>
 
-    <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot17.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JustinAlexanderKnot17.jpg" alt="Justin Alexander">
-    Justin Alexander
-    </a>
+        <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot17.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/JustinAlexanderKnot17.jpg" alt="Justin Alexander">
+        Justin Alexander
+        </a>
 
-    <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot18.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JustinAlexanderKnot18.jpg" alt="Justin Alexander">
-    Justin Alexander
-    </a>
+        <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot18.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/JustinAlexanderKnot18.jpg" alt="Justin Alexander">
+        Justin Alexander
+        </a>
 
-    <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot19.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JustinAlexanderKnot19.jpg" alt="Justin Alexander">
-    Justin Alexander
-    </a>
+        <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot19.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/JustinAlexanderKnot19.jpg" alt="Justin Alexander">
+        Justin Alexander
+        </a>
 
-    <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot20.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JustinAlexanderKnot20.jpg" alt="Justin Alexander">
-    Justin Alexander
-    </a>
+        <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot20.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/JustinAlexanderKnot20.jpg" alt="Justin Alexander">
+        Justin Alexander
+        </a>
 
-    <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot21.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JustinAlexanderKnot21.jpg" alt="Justin Alexander">
-    Justin Alexander
-    </a>
+        <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot21.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/JustinAlexanderKnot21.jpg" alt="Justin Alexander">
+        Justin Alexander
+        </a>
 
-    <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot22.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JustinAlexanderKnot22.jpg" alt="Justin Alexander">
-    Justin Alexander
-    </a>
+        <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot22.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/JustinAlexanderKnot22.jpg" alt="Justin Alexander">
+        Justin Alexander
+        </a>
 
-    <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot23.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JustinAlexanderKnot23.jpg" alt="Justin Alexander">
-    Justin Alexander
-    </a>
+        <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot23.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/JustinAlexanderKnot23.jpg" alt="Justin Alexander">
+        Justin Alexander
+        </a>
 
-    <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot24.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JustinAlexanderKnot24.jpg" alt="Justin Alexander">
-    Justin Alexander
-    </a>
+        <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot24.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/JustinAlexanderKnot24.jpg" alt="Justin Alexander">
+        Justin Alexander
+        </a>
 
-    <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot25.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JustinAlexanderKnot25.jpg" alt="Justin Alexander">
-    Justin Alexander
-    </a>
+        <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot25.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/JustinAlexanderKnot25.jpg" alt="Justin Alexander">
+        Justin Alexander
+        </a>
 
-    <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot26.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JustinAlexanderKnot26.jpg" alt="Justin Alexander">
-    Justin Alexander
-    </a>
+        <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot26.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/JustinAlexanderKnot26.jpg" alt="Justin Alexander">
+        Justin Alexander
+        </a>
 
-    <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot27.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JustinAlexanderKnot27.jpg" alt="Justin Alexander">
-    Justin Alexander
-    </a>
+        <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot27.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/JustinAlexanderKnot27.jpg" alt="Justin Alexander">
+        Justin Alexander
+        </a>
 
-    <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot28.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JustinAlexanderKnot28.jpg" alt="Justin Alexander">
-    Justin Alexander
-    </a>
+        <a class="polaroid" href="Images/Collection_large/JustinAlexanderKnot28.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/JustinAlexanderKnot28.jpg" alt="Justin Alexander">
+        Justin Alexander
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/JA style 8840.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/JA style 8840.jpg" alt="Justin Alexander">
+        Justin Alexander
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/JA style 8830.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/JA style 8830.jpg" alt="Justin Alexander">
+        Justin Alexander
+        </a>
     
-    <!--<a class="polaroid" href="Images/Collection_large/Justin-Alexander-6255.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/Justin-Alexander-6255.jpg" alt="Justin Alexander">
-    Justin Alexander
-    </a>-->
+    </span>
     
-    <a class="polaroid" href="Images/Collection_large/JA style 8840.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JA style 8840.jpg" alt="Justin Alexander">
-    Justin Alexander
-    </a>
+    <br>
     
-    <a class="polaroid" href="Images/Collection_large/JA style 8830.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JA style 8830.jpg" alt="Justin Alexander">
-    Justin Alexander
-    </a>
+    <div class="hideButton">
+        <span>Show more </span>
+        <i class="arrow fa fa-angle-down" aria-hidden="true"></i>
+    </div>
     
-    <a class="polaroid" href="Images/Collection_large/6440_bod.JPG" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/6440_bod.JPG" alt="Justin Alexander">
-    Justin Alexander
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/6441_sk.JPG" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/6441_sk.JPG" alt="Justin Alexander">
-    Justin Alexander
-    </a>
-        
-    <a class="polaroid" href="Images/Collection_large/JA_6425.JPG" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JA_6425.JPG" alt="Justin Alexander">
-    Justin Alexander
-    </a>
-    <a class="polaroid" href="Images/Collection_large/JA_8857.JPG" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JA_8857.JPG" alt="Justin Alexander">
-    Justin Alexander
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/JA_8872.JPG" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JA_8872.JPG" alt="Justin Alexander">
-    Justin Alexander
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/JA_8891.JPG" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/JA_8891.JPG" alt="Justin Alexander">
-    Justin Alexander
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/8880.JPG" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/8880.JPG" alt="Justin Alexander">
-    Justin Alexander
-    </a>
-    
-
     <h3 id="first-h3">Venus</h3>
     
     <p>Timeless and romantic details come together to create a vast array of styles for every bride's individual beauty and unique personal charm. These gowns are in demand all around the world.</p>
@@ -567,86 +516,97 @@ function googleTranslateElementInit() {
         <img src="Images/Collection_small/NewJudeGowns/FLORENCEback_edited.jpg" alt="Jude Jowilson">
     Jude Jowilson
     </a>
-
-    <a class="polaroid" href="Images/Collection_large/NewJudeGowns/FLORENCEchantillylacedetail_edited.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/NewJudeGowns/FLORENCEchantillylacedetail_edited.jpg" alt="Jude Jowilson">
-    Jude Jowilson
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/NewJudeGowns/GRACE_edited.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/NewJudeGowns/GRACE_edited.jpg" alt="Jude Jowilson">
-    Jude Jowilson
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/NewJudeGowns/GRACEback_edited.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/NewJudeGowns/GRACEback_edited.jpg" alt="Jude Jowilson">
-    Jude Jowilson
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/NewJudeGowns/GRETAback_edited.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/NewJudeGowns/GRETAback_edited.jpg" alt="Jude Jowilson">
-    Jude Jowilson
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/NewJudeGowns/ZELDABACK.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/NewJudeGowns/ZELDABACK.jpg" alt="Jude Jowilson">
-    Jude Jowilson
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/NewJudeGowns/BETTE.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/NewJudeGowns/BETTE.jpg" alt="Jude Jowilson">
-    Jude Jowilson
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/NewJudeGowns/BETTEBACK.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/NewJudeGowns/BETTEBACK.jpg" alt="Jude Jowilson">
-    Jude Jowilson
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/NewJudeGowns/judes photo -215.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/NewJudeGowns/judes photo -215.jpg" alt="Jude Jowilson">
-    Jude Jowilson
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/NewJudeGowns/judes photo -229.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/NewJudeGowns/judes photo -229.jpg" alt="Jude Jowilson">
-    Jude Jowilson
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/NewJudeGowns/judes photo -252.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/NewJudeGowns/judes photo -252.jpg" alt="Jude Jowilson">
-    Jude Jowilson
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/NewJudeGowns/SOPHIA.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/NewJudeGowns/SOPHIA.jpg" alt="Jude Jowilson">
-    Jude Jowilson
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/NewJudeGowns/ZELDA.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/NewJudeGowns/ZELDA.jpg" alt="Jude Jowilson">
-    Jude Jowilson
-    </a>
     
-    <a class="polaroid" href="Images/Collection_large/HUPX9455.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/HUPX9455.jpg" alt="Jude Jowilson">
-    Jude Jowilson
-    </a>
+    <span class = "hideSection">
 
-    <a class="polaroid" href="Images/Collection_large/HUPX9531.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/HUPX9531.jpg" alt="Jude Jowilson">
-    Jude Jowilson
-    </a>
+        <a class="polaroid" href="Images/Collection_large/NewJudeGowns/FLORENCEchantillylacedetail_edited.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/NewJudeGowns/FLORENCEchantillylacedetail_edited.jpg" alt="Jude Jowilson">
+        Jude Jowilson
+        </a>
 
-    <a class="polaroid" href="Images/Collection_large/HUPX9730.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/HUPX9730.jpg" alt="Jude Jowilson">
-    Jude Jowilson
-    </a>
+        <a class="polaroid" href="Images/Collection_large/NewJudeGowns/GRACE_edited.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/NewJudeGowns/GRACE_edited.jpg" alt="Jude Jowilson">
+        Jude Jowilson
+        </a>
 
-    <a class="polaroid" href="Images/Collection_large/look4back.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/look4back.jpg" alt="Jude Jowilson">
-    Jude Jowilson
-    </a>
+        <a class="polaroid" href="Images/Collection_large/NewJudeGowns/GRACEback_edited.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/NewJudeGowns/GRACEback_edited.jpg" alt="Jude Jowilson">
+        Jude Jowilson
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/NewJudeGowns/GRETAback_edited.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/NewJudeGowns/GRETAback_edited.jpg" alt="Jude Jowilson">
+        Jude Jowilson
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/NewJudeGowns/ZELDABACK.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/NewJudeGowns/ZELDABACK.jpg" alt="Jude Jowilson">
+        Jude Jowilson
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/NewJudeGowns/BETTE.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/NewJudeGowns/BETTE.jpg" alt="Jude Jowilson">
+        Jude Jowilson
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/NewJudeGowns/BETTEBACK.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/NewJudeGowns/BETTEBACK.jpg" alt="Jude Jowilson">
+        Jude Jowilson
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/NewJudeGowns/judes photo -215.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/NewJudeGowns/judes photo -215.jpg" alt="Jude Jowilson">
+        Jude Jowilson
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/NewJudeGowns/judes photo -229.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/NewJudeGowns/judes photo -229.jpg" alt="Jude Jowilson">
+        Jude Jowilson
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/NewJudeGowns/judes photo -252.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/NewJudeGowns/judes photo -252.jpg" alt="Jude Jowilson">
+        Jude Jowilson
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/NewJudeGowns/SOPHIA.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/NewJudeGowns/SOPHIA.jpg" alt="Jude Jowilson">
+        Jude Jowilson
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/NewJudeGowns/ZELDA.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/NewJudeGowns/ZELDA.jpg" alt="Jude Jowilson">
+        Jude Jowilson
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/HUPX9455.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/HUPX9455.jpg" alt="Jude Jowilson">
+        Jude Jowilson
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/HUPX9531.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/HUPX9531.jpg" alt="Jude Jowilson">
+        Jude Jowilson
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/HUPX9730.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/HUPX9730.jpg" alt="Jude Jowilson">
+        Jude Jowilson
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/look4back.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/look4back.jpg" alt="Jude Jowilson">
+        Jude Jowilson
+        </a>
+    
+    </span>
+    
+    <br>
+    
+    <div class="hideButton">
+        <span>Show more </span>
+        <i class="arrow fa fa-angle-down" aria-hidden="true"></i>
+    </div>
     
     <h3>Rosa Clará</h3>
     
@@ -671,91 +631,72 @@ function googleTranslateElementInit() {
         <img src="Images/Collection_small/RosaClaraKnot32.jpg" alt="Rosa Clara">
     Rosa Clara
     </a>
-
-    <a class="polaroid" href="Images/Collection_large/RosaClaraKnot33.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/RosaClaraKnot33.jpg" alt="Rosa Clara">
-    Rosa Clara
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/RosaClaraKnot34.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/RosaClaraKnot34.jpg" alt="Rosa Clara">
-    Rosa Clara
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/RosaClaraKnot35.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/RosaClaraKnot35.jpg" alt="Rosa Clara">
-    Rosa Clara
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/RosaClaraKnot36.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/RosaClaraKnot36.jpg" alt="Rosa Clara">
-    Rosa Clara
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/RosaClaraKnot37.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/RosaClaraKnot37.jpg" alt="Rosa Clara">
-    Rosa Clara
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/RosaClaraKnot38.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/RosaClaraKnot38.jpg" alt="Rosa Clara">
-    Rosa Clara
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/RosaClaraKnot39.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/RosaClaraKnot39.jpg" alt="Rosa Clara">
-    Rosa Clara
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/RosaClaraKnot40.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/RosaClaraKnot40.jpg" alt="Rosa Clara">
-    Rosa Clara
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/RosaClaraKnot41.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/RosaClaraKnot41.jpg" alt="Rosa Clara">
-    Rosa Clara
-    </a>
-	
-	<a class="polaroid" href="Images/Collection_large/RosaClaraKnot42.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/RosaClaraKnot42.jpg" alt="Rosa Clara">
-    Rosa Clara
-    </a>
     
-    <h3>Nicole Spose</h3>
+    <span class="hideSection">
+
+        <a class="polaroid" href="Images/Collection_large/RosaClaraKnot33.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/RosaClaraKnot33.jpg" alt="Rosa Clara">
+        Rosa Clara
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/RosaClaraKnot34.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/RosaClaraKnot34.jpg" alt="Rosa Clara">
+        Rosa Clara
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/RosaClaraKnot35.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/RosaClaraKnot35.jpg" alt="Rosa Clara">
+        Rosa Clara
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/RosaClaraKnot36.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/RosaClaraKnot36.jpg" alt="Rosa Clara">
+        Rosa Clara
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/RosaClaraKnot37.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/RosaClaraKnot37.jpg" alt="Rosa Clara">
+        Rosa Clara
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/RosaClaraKnot38.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/RosaClaraKnot38.jpg" alt="Rosa Clara">
+        Rosa Clara
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/RosaClaraKnot39.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/RosaClaraKnot39.jpg" alt="Rosa Clara">
+        Rosa Clara
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/RosaClaraKnot40.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/RosaClaraKnot40.jpg" alt="Rosa Clara">
+        Rosa Clara
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/RosaClaraKnot41.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/RosaClaraKnot41.jpg" alt="Rosa Clara">
+        Rosa Clara
+        </a>
+
+        <a class="polaroid" href="Images/Collection_large/RosaClaraKnot42.jpg" rel="prettyPhoto[gallery]">
+            <img src="Images/Collection_small/RosaClaraKnot42.jpg" alt="Rosa Clara">
+        Rosa Clara
+        </a>
     
-    <p>Nicole Spose has collections that speak of a fresh and young fashion, that dictate trends, while maintaining quality and tailoring. Exclusively at our salon in New York City</p>
-
-
-    <a class="polaroid" href="Images/Collection_large/nicole-spose-NIAB17052.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/nicole-spose-NIAB17052.jpg" alt="Lace Casa Blanca">
-    Nicole Spose
-    </a>
-
-    <a class="polaroid" href="Images/Collection_large/nicole-spose-NIAB17064.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/nicole-spose-NIAB17064.jpg" alt="Lace Casa Blanca">
-    Nicole Spose
-    </a>
-	
-	<a class="polaroid" href="Images/Collection_large/nicole-spose-NIAB17092.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/nicole-spose-NIAB17092.jpg" alt="Lace Casa Blanca">
-    Nicole Spose
-    </a>
-
-      <a class="polaroid" href="Images/Collection_large/nicole-spose-NIAB17080-Nicole-moda-sposa-2017-128.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/nicole-spose-NIAB17080-Nicole-moda-sposa-2017-128.jpg" alt="Lace Casa Blanca">
-    Nicole Spose
-    </a>
-	
-	<a class="polaroid" href="Images/Collection_large/nicole-spose-NIAB17134-Nicole-moda-sposa-2017-264.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/nicole-spose-NIAB17134-Nicole-moda-sposa-2017-264.jpg" alt="Lace Casa Blanca">
-    Nicole Spose
-    </a>
-
+    </span>
+    
+    <br>
+    
+    <div class="hideButton">
+        <span>Show more </span>
+        <i class="arrow fa fa-angle-down" aria-hidden="true"></i>
+    </div>
+    
+    
     <h3>More selections</h3>
     
     <p></p>
-
     
     <a class="polaroid" href="Images/Collection_large/glry-img2.jpg" rel="prettyPhoto[gallery]">
         <img src="Images/Collection_small/glry-img2.jpg" alt="La Sposa Felicidad">
@@ -821,11 +762,6 @@ function googleTranslateElementInit() {
         <img src="Images/Collection_small/Mon Cheri 19226W.jpg" alt="Mon Cheri">
     Mon Cheri
     </a>
-    
-    <!--<a class="polaroid" href="Images/Collection_large/Marisa 923.jpg" rel="prettyPhoto[gallery]">
-        <img src="Images/Collection_small/Marisa 923.jpg" alt="Marisa">
-    Marisa
-    </a>-->
     
     <a class="polaroid" href="Images/Collection_large/glry-img1.jpg" rel="prettyPhoto[gallery]">
         <img src="Images/Collection_small/glry-img1.jpg" alt="La Sposa Leira">
@@ -974,10 +910,47 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript" charset="utf-8">
 	$(document).ready(function(){
-	$("a[rel^='prettyPhoto']").prettyPhoto();
-	/*turning off twitter and facebook buttons on the bottom of lightbox*/
-	$("a[rel^='prettyPhoto']").prettyPhoto({social_tools:false}); 
+        $("a[rel^='prettyPhoto']").prettyPhoto();
+        /*turning off twitter and facebook buttons on the bottom of lightbox*/
+        $("a[rel^='prettyPhoto']").prettyPhoto({social_tools:false}); 
 	});
+    
+    
+    $(document).ready(function(){
+        var hideSection = $(".hideSection");
+        var toggleButton = $(".hideButton");
+    
+        toggleButton.hover(function(){
+            $(this).find(':first-child').css("border-bottom", "solid 1px");
+            }, function(){
+            $(this).find(':first-child').css("border-bottom", "none");   
+        });
+        
+        toggleButton.on("click", function(){    
+            /*
+            $(this).prevUntil('a').toggle(300);
+            $(this).prevUntil('a').css("display", "inline");
+            */
+            $(this).prevUntil('a').toggle(300).css("display", "inline");
+            
+            if($(this).is(':contains("more")')){
+                $(this).find(':first-child').text("Show less ");
+                $(this).find(':last-child').removeClass("fa-angle-down").addClass("fa-angle-up");
+                $("<br>").insertBefore($(this)); //the br disappears after clicking toggleButton so I made it appear again using jQuery
+            }
+            else{
+                $(this).find(':first-child').text("Show more ");
+                $(this).find(':last-child').removeClass("fa-angle-up").addClass("fa-angle-down");
+                $('html, body').animate({
+                    //scrollTop: $(this).prev().prev().offset().top
+                    scrollTop: $(this).prevAll('a').offset().top
+                    //scrollTop: $(this).prevAll('h3').offset().top
+                }, 300);
+            };
+        });
+        
+    });    
+    
 </script>
 
 
